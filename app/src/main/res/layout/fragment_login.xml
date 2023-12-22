@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.login.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/number_field_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:prefixText="+"
+            android:hint="@string/number"
+            app:endIconMode="clear_text"
+            app:endIconDrawable="@drawable/round_clear_24"
+            app:endIconTint="@color/secondary"
+            android:textColorHint="@color/secondary"
+            app:boxCornerRadiusBottomEnd="@dimen/medium_corner_radius"
+            app:boxCornerRadiusBottomStart="@dimen/medium_corner_radius"
+            app:boxCornerRadiusTopEnd="@dimen/medium_corner_radius"
+            app:boxCornerRadiusTopStart="@dimen/medium_corner_radius"
+            app:boxStrokeColor="@color/secondary"
+            app:boxStrokeErrorColor="@color/error"
+            app:boxStrokeWidth="1dp"
+            app:hintTextColor="@color/secondary"
+            app:cursorColor="@color/secondary"
+            app:cursorErrorColor="@color/error"
+            app:errorTextColor="@color/error">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/number_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:inputType="numberDecimal"
+                android:maxLength="11" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/small_margin" />
+
+        <LinearLayout
+            android:id="@+id/code_panel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/code_field_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sms_code"
+                app:hintTextColor="@color/secondary"
+                app:cursorColor="@color/secondary"
+                android:textColorHint="@color/secondary"
+                app:boxCornerRadiusBottomEnd="@dimen/medium_corner_radius"
+                app:boxCornerRadiusBottomStart="@dimen/medium_corner_radius"
+                app:boxCornerRadiusTopEnd="@dimen/medium_corner_radius"
+                app:boxCornerRadiusTopStart="@dimen/medium_corner_radius"
+                app:boxStrokeColor="@color/secondary"
+                app:boxStrokeErrorColor="@color/error"
+                app:boxStrokeWidth="1dp"
+                app:cursorErrorColor="@color/error"
+                app:errorTextColor="@color/error">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/code_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resend_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:enabled="false"
+                android:text="@string/send_code_again"
+                android:textAllCaps="false"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColor="@color/link_color" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/confirm_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/send_code"
+            android:textAllCaps="false"
+            app:backgroundTint="@color/onPrimary"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="@color/white"
+            app:cornerRadius="@dimen/secondary_margin" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

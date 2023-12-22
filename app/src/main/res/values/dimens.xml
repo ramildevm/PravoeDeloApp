@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="main_margin">16dp</dimen>
+    <dimen name="main_smaller_margin">15dp</dimen>
+    <dimen name="secondary_margin">10dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="tiny_margin">5dp</dimen>
+
+    <dimen name="large_corner_radius">15dp</dimen>
+    <dimen name="main_corner_radius">12dp</dimen>
+    <dimen name="medium_corner_radius">10dp</dimen>
+    <dimen name="small_corner_radius">5dp</dimen>
+</resources>

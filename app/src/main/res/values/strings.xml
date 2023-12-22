@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PravoeDeloApp</string>
+    <string name="login_title">Вход</string>
+    <string name="greeting_title">Добро пожаловать</string>
+    <string name="number">Введите номер</string>
+    <string name="sms_code">Код из смс</string>
+    <string name="send_code_again">Отправить код заново</string>
+    <string name="sign_in">Войти</string>
+    <string name="send_code">Отправить код</string>
+    <string name="number_format_error">Телефон должен совпадать с заданным форматом.</string>
+    <string name="not_all_fields_correct_warning">Введены неверные данные</string>
+    <string name="home_token_txt">Ваш токен \"%1$s\"</string>
+    <string name="greeting_home_number">"Здравствуйте, \"%1$s\""</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".presentation.home.HomeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/greeting_txt"
+            android:layout_marginHorizontal="25dp"
+            tools:text="@string/greeting_home_number"
+            android:textAlignment="center"
+            android:layout_marginTop="32dp"
+            android:textColor="@color/onPrimary"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/token_txt"
+            android:layout_marginTop="@dimen/main_margin"
+            android:layout_marginHorizontal="25dp"
+            tools:text="@string/home_token_txt"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
